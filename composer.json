@@ -1,0 +1,35 @@
+{
+  "name": "t324inc/d324-updater",
+  "description": "A set of scripts and tools that will help you to update to the newer versions of D324.",
+  "type": "composer-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "T324",
+      "homepage": "https://github.com/t324inc",
+      "role": "Maintainer"
+    }
+  ],
+  "repositories": {
+    "t324": {
+      "type": "composer",
+      "url": "https://t324inc.github.io/satis/"
+    },
+  },
+  "require": {
+    "composer-plugin-api": "^1.1",
+    "symfony/yaml": "^3.1"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-8.x-7.x": "8.7.x-dev"
+    },
+    "class": "t324inc\\Composer\\Plugin\\D324Updater"
+  },
+  "autoload": {
+    "psr-4": {"t324inc\\Composer\\": "src"}
+  },
+  "bin":[
+    "scripts/update/update-d324.sh"
+  ]
+}

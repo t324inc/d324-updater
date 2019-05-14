@@ -1,0 +1,34 @@
+{
+  "profile": "d324",
+  "package": "t324inc/d324",
+  "8.7.*": {
+    "from": "8.7.*",
+    "to": "8.7.*"
+  },
+  "8.5.*": {
+    "from": "8.5.*",
+    "to": "8.6.*",
+    "packages": {
+      "crucial": {
+        "drupal/d324_carousels": "6.0",
+        "drupal/entity_browser": "2.0",
+        "drupal/video_embed_field": "2.0",
+        "drupal/media_entity": "2.0-beta3",
+        "drupal/panelizer": "4.1",
+        "vardot/entity_browser_generic_embed": "8.1.x-dev"
+      }
+    },
+    "skip":[
+      "media_entity_document",
+      "media_entity_image"
+    ],
+    "enable-after-update":[
+      "entity_browser_generic_embed"
+    ]
+  },
+  "8.6.*": {
+    "from": "8.6.*",
+    "to": "8.7.*"
+  },
+  "composer-project-json-url": "https://raw.githubusercontent.com/t324inc/d324-project/8.x/composer.json"
+}
