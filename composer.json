@@ -14,7 +14,7 @@
     "t324": {
       "type": "composer",
       "url": "https://t324inc.github.io/satis/"
-    },
+    }
   },
   "require": {
     "composer-plugin-api": "^1.1",
